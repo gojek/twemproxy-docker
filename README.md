@@ -8,4 +8,4 @@ You need docker 17.05 to be able to build
 ## Running
 Pass comma separated list of servers via ENV SERVERS
 
-`docker run -e SERVERS=ip1:6379:1,ip2:6379:1 -it gojektech/twemproxy:0.4.1`
+`docker run -e SERVERS=ip1:6379:1,ip2:6379:1 -p 6379:6379 -it gojektech/twemproxy:0.4.1`
